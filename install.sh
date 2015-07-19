@@ -5,10 +5,8 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 files="bash_profile"
 
-# create dotfiles_old in homedir
+# create and change to olddir
 mkdir $olddir
-
-# change to the dotfiles directory
 cd $dir
 
 # move any existing dotfiles to oldir, then symlink to the new ones
