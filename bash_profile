@@ -6,11 +6,11 @@ export PATH="$PATH:/usr/local/mysql/bin"
 
 export PATH="$PATH:~/.composer/vendor/bin"
 
-[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[ -s "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export NVM_DIR="/Users/erik/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 export PATH="$PATH:/Users/erik/.node/bin"
 
 function cls {
