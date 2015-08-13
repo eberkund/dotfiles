@@ -21,3 +21,6 @@ export PATH="$PATH:/Users/erik/.node/bin"
 function cls {
 	osascript -e 'tell application "System Events" to keystroke "k" using command down'
 }
+
+# Aliases
+alias unrardir='for f in *.rar;do unrar x "$f" "${f%.rar}/";done'
