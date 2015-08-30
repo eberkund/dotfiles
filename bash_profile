@@ -24,3 +24,5 @@ function cls {
 
 # Aliases
 alias unrardir='for f in *.rar;do unrar x "$f" "${f%.rar}/";done'
+
+alias shrinkdir='for d in */;do mogrify -strip -resize 1000x1000 -quality 85% "$d*JPG";done'
