@@ -3,7 +3,7 @@
 # variables
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files=("bash_profile" "jscsrc")
+files=("bash_profile" "eslintrc")
 
 # create and change to olddir
 mkdir $olddir

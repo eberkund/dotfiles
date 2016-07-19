@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "jquery": true
+  },
+  "extends": "standard",
+  "plugins": [
+    "react",
+    "html"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-undef": 0
+  }
+}
