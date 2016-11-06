@@ -3,7 +3,7 @@
 # variables
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files=("bash_profile" "eslintrc")
+files=("bash_profile" "eslintrc" "zshrc" "gitconfig")
 
 # create and change to olddir
 mkdir $olddir
