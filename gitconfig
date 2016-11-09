@@ -3,8 +3,10 @@
 	email = erik.b22@gmail.com
 [core]
 	editor = subl -w
+	autocrlf = true
+	safecrlf = false
 	fileMode = false
-	excludesfile = /Users/erik/.gitignore
+	whitespace = trailing-space,space-before-tab
 [filter "media"]
 	required = true
 	clean = git media clean %f
