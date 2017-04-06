@@ -49,7 +49,7 @@ ZSH_THEME="risto"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git encode64 httpie gitflow)
+plugins=(git encode64 httpie gitflow yarn laravel5 colored-man-pages sudo)
 
 # User configuration
 

@@ -1,6 +1,7 @@
 [user]
 	name = Erik Berkun-Drevnig
 	email = erik.b22@gmail.com
+	signingkey = 655716B83401C462C35F390893782CB05EEB46BB
 [core]
 	editor = subl -w
 	autocrlf = true
@@ -13,27 +14,33 @@
 	smudge = git media smudge %f
 [push]
 	default = simple
+	followTags = true
+[status]
+	showUntrackedFiles = all
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[merge]
+	tool = Kaleidoscope
+	ff = only
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustexitcode = true
-[merge]
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
 [mergetool]
 	prompt = false
 	keepBackup = false
 [diff]
 	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
 [alias]
 	st = status
+	co = checkout
 	ca = commit -a
+	undo = reset --soft HEAD^
 [log]
 	abbrevCommit = true
 [format]
