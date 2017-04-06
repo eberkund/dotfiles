@@ -4,7 +4,7 @@
 	signingkey = 655716B83401C462C35F390893782CB05EEB46BB
 [core]
 	editor = subl -w
-	autocrlf = true
+	autocrlf = input
 	safecrlf = false
 	fileMode = false
 	whitespace = trailing-space,space-before-tab
