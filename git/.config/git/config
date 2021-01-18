@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Erik Berkun-Drevnig
+	email = erik.berkundrevnig@lotusflare.com
+[alias]
+	ca = commit -a
+	co = checkout
+	st = status
+	rpo = remote prune origin
+[branch]
+	autosetupmerge = true
+[push]
+	default = current
+[core]
+	editor = subl -n -w
+	excludesfile = /Users/erik/.config/git/ignore
+[merge]
+	tool = smerge
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
