@@ -8,7 +8,9 @@
 	st = status
 	rpo = remote prune origin
 [branch]
-	autosetupmerge = true
+	autoSetupMerge = always
+[checkout]
+	defaultRemote = origin
 [push]
 	default = current
 [core]
