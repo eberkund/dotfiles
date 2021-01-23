@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Erik Berkun-Drevnig
-	email = erik.berkundrevnig@lotusflare.com
+	email = erik.b22@gmail.com
 [alias]
 	ca = commit -a
 	co = checkout
