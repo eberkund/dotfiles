@@ -6,13 +6,9 @@
 	ca = commit -a
 	co = checkout
 	st = status
-	rpo = remote prune origin
-[branch]
-	autoSetupMerge = always
-[checkout]
-	defaultRemote = origin
+	su = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 [push]
-	default = current
+	default = upstream
 [core]
 	editor = subl -n -w
 	excludesfile = /Users/erik/.config/git/ignore
@@ -27,3 +23,5 @@
 	rebase = true
 [status]
 	showUntrackedFiles = all
+[fetch]
+	prune = true
