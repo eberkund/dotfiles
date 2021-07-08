@@ -8,7 +8,7 @@
 	st = status
 	su = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 [push]
-	default = upstream
+	default = current
 [core]
 	editor = subl -n -w
 	excludesfile = /Users/erik/.config/git/ignore
