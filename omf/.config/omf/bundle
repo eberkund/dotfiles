@@ -1,5 +1,6 @@
 package foreign-env
 package vcs
+theme boxfish
 theme chain
 theme clearance
 theme default
