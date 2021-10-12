@@ -1,7 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Erik Berkun-Drevnig
-	email = erik.b22@gmail.com
 [alias]
 	ca = commit -a
 	co = checkout
@@ -11,7 +10,9 @@
 	default = current
 [core]
 	editor = subl -n -w
-	excludesfile = /Users/erik/.config/git/ignore
+	excludesfile = ~/.config/git/ignore
+[include]
+	path = ~/.config/git/local
 [merge]
 	tool = smerge
 [filter "lfs"]
