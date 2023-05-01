@@ -1,6 +1,9 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Erik Berkun-Drevnig
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDEi5fn8NWhvefoMRdt/1fKP6lE+5fk4A95CatW2z9eb
+[init]
+	defaultBranch = master
 [alias]
 	ca = commit -a
 	co = checkout
@@ -26,3 +29,7 @@
 	showUntrackedFiles = all
 [fetch]
 	prune = true
+[rebase]
+	autoStash = true
+[url "ssh://git@github.com:"]
+	insteadOf = https://github.com/
